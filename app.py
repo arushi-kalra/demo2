@@ -18,4 +18,4 @@ employee_info={
 def predict():
 	return employee_info
 
-app.run(port=33507,debug=True)
+app.run(debug=True)
