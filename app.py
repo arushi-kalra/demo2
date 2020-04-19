@@ -1,21 +1,21 @@
 from flask import Flask
-
-app=Flask(__name__)
-
-employee_info={
-	"emp1":
-	{
-	"name":"xyz",
-	"sal":"10"
-	},
-	"emp2":
-	{
-	"name":"abc",
-	"sal":"14"
-	}
+app = Flask(__name__)
+employee_info = {
+    "emp1":
+        {
+            "name": "xyzsa",
+            "sal": "10"
+        },
+    "emp2":
+        {
+            "name": "absac",
+            "sal": "14"
+        }
 }
-@app.route('/predict',methods=['GET'])
+@app.route('/predict', methods=['GET'])
 def predict():
-	return employee_info
+    return employee_info
 
-app.run(debug=True)
+
+if __name__ == '__main__':
+    app.run(debug=True)
