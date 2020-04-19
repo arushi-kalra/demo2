@@ -20,4 +20,4 @@ class Employee(Resource):
 		return employee_info
 
 api.add_resource(Employee,"/info")
-app.run(host="192.168.199.1", port=8000,debug=True)
+app.run(host='localhost', port=5000,debug=True)
